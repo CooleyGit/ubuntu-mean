@@ -38,3 +38,57 @@ sudo npm install -g express
 ```
 
 >Main install done
+
+
+##Get project running on server 
+*Note: A good Yeoman project to start with is [DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)*
+
+####SCP your project to the ubuntu directory 
+*Note: replace <server ip> with your ip, you should be running this from your local*
+```
+scp -i ~/.ssh/your-pem-file.pem -r ~/local-project-path ubuntu@<server ip>:/home/ubuntu
+```
+
+####Run npm in your project root 
+```
+sudo npm install
+```
+
+####Start the server 
+*Note: this will only run while your terminal session is open, use pm2 to keep server running*
+```
+cd path/to/server/file
+node app.js
+```
+
+##PM2 options
+
+####Install PM2 
+*Note: pm2 will allow you to keep your server running and create clusters*
+```
+sudo npm install -g pm2
+```
+
+####Start PM2 
+*Note: The below example will start 4 clusters*
+```
+sudo pm2 start <server file> -i 4
+```
+
+####Other pm2 options
+```
+sudo pm2 stop <server file>
+sudo pm2 restart <server file>
+sudo pm2 delete <server file>
+```
+
+####Different ways to launch a PM2 process 
+*Note: More options @ [https://www.npmjs.org/package/pm2](https://www.npmjs.org/package/pm2)*
+```
+pm2 start app.js -i max  # Will start maximum processes depending on available CPUs
+pm2 start app.js -i 3    # Will start 3 processes
+pm2 start app.js -i max -- -a 23  # Pass arguments after -- to app.js
+```
+
+
+
