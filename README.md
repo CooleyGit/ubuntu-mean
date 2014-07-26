@@ -9,7 +9,7 @@ Basic setup notes for mean stack install on AWS Ubuntu 14.04. I am assuming you 
 * HTTP           TCP     80     <ip>
 * All traffic    All     All    <ip>
 ``` 
-*Note: I use these basic settings to get started. You should be using your computer ip for security.*
+*Note: I use these basic settings to get started. You dont need to open all ports. You should be using your computer ip for security.*
 
 ####Install Node and npm 
 ```
