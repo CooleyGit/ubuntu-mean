@@ -1,7 +1,7 @@
 ubuntu-mean
 ===========
 
-Basic setup notes for mean stack install on AWS Ubuntu 14.04. I am assuming you have AWS account and a pem file somewhere on your local. Launch new EC2 instance on AWS you can use the default AWS Ubuntu 14.04 server all settings can be default except security group. 
+Basic setup notes for mean stack install on AWS Ubuntu 14.04. I am assuming you have AWS account and a pem file somewhere on your local. Launch new EC2 instance on AWS you can use the default AWS Ubuntu 14.04 server, all settings can be default except security group. 
 
 ####Security group:
 ```
