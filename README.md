@@ -54,7 +54,7 @@ scp -i ~/.ssh/your-pem-file.pem -r ~/local-project-path ubuntu@<server ip>:/home
 sudo npm install
 ```
 
-####Start the server 
+##Start the server with `node` comand 
 *Note: this will only run while your terminal session is open, use pm2 to keep server running*
 ```
 cd path/to/server/file
