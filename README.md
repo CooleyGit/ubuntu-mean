@@ -17,7 +17,7 @@ sudo apt-get update
 sudo apt-get install nodejs
 sudo apt-get install npm
 ```
-*Note: Installed from apt-get so it may not be the latest version, alternative install with ppa (chris lea repo)*
+*Note: Installed from apt-get so it may not be the latest version, alternative install with (Chris Lea PPA)*
 
 ####Create a symlink in your path to use the `node` comand
 ```
