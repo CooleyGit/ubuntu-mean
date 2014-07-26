@@ -61,7 +61,7 @@ sudo npm install
 cd path/to/server/file
 node app.js
 ```
-*Note: this will only run while your terminal session is open, use pm2 to keep server running*
+*Note: This will only run while your terminal session is open, use pm2 to keep server running*
 
 ##PM2 options
 
@@ -75,7 +75,7 @@ sudo npm install -g pm2
 ```
 sudo pm2 start <server file> -i 4
 ```
-*Note: The below example will start 4 clusters*
+*Note: This example will start 4 clusters*
 
 ####Other pm2 options
 ```
