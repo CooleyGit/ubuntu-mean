@@ -32,7 +32,7 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 sudo apt-get update
 sudo apt-get install mongodb-org
 ```
-*[source @ http://docs.mongodb.org/](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/)*
+*[source @ docs.mongodb.org](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/)*
 
 ####Install Express
 ```
