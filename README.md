@@ -1,10 +1,17 @@
 ubuntu-mean
 ===========
 
-Basic setup notes for mean stack install on AWS Ubuntu 14.04
+Basic setup notes for mean stack install on AWS Ubuntu 14.04. I am assuming you have AWS account and a pem file somewhere on your local. Launch new EC2 instance on AWS you can use the default AWS Ubuntu 14.04 server all settings can be default except security group. 
+
+####Security group:
+*(I use these basic settings to get started. You should be using your computer ip for security otherwise anyone can hit your server)*
+SSH           TCP    22     <ip>
+HTTP          TCP    80     <ip>
+All traffic   All    All    <ip>
+
 
 ####Install Node and npm 
-*Note: This is installed from apt-get so it may not be the latest version*
+*Note: This is installed from apt-get so it may not be the latest version alternative install with ppa (chris lea repo) to get a more uptodate version*
 ```
 sudo apt-get update
 sudo apt-get install nodejs
