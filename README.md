@@ -44,9 +44,9 @@ sudo npm install -g express
 *Note: A good Yeoman project to start with is [DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)*
 
 ####SCP your project to the ubuntu directory 
-*Note: replace <server ip> with your ip, you should be running this from your local*
+*Note: replace 0.0.0.0 with your ip, you should be running this from your local*
 ```
-scp -i ~/.ssh/your-pem-file.pem -r ~/local-project-path ubuntu@<server ip>:/home/ubuntu
+scp -i ~/.ssh/your-pem-file.pem -r ~/local-project-path ubuntu@0.0.0.0:/home/ubuntu
 ```
 
 ####Run npm in your project root 
