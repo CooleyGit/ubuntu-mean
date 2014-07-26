@@ -5,10 +5,11 @@ Basic setup notes for mean stack install on AWS Ubuntu 14.04. I am assuming you 
 
 ####Security group:
 *(I use these basic settings to get started. You should be using your computer ip for security otherwise anyone can hit your server)*
-SSH           TCP    22     <ip>
-HTTP          TCP    80     <ip>
-All traffic   All    All    <ip>
-
+```
+* SSH            TCP     22     <ip>
+* HTTP           TCP     80     <ip>
+* All traffic    All     All    <ip>
+``` 
 
 ####Install Node and npm 
 *Note: This is installed from apt-get so it may not be the latest version alternative install with ppa (chris lea repo) to get a more uptodate version*
