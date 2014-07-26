@@ -9,7 +9,7 @@ Basic setup notes for mean stack install on AWS Ubuntu 14.04. I am assuming you 
 * HTTP           TCP     80     <ip>
 * All traffic    All     All    <ip>
 ``` 
-*(I use these basic settings to get started. You should be using your computer ip for security otherwise anyone can hit your server)*
+*Note: I use these basic settings to get started. You should be using your computer ip for security.*
 
 ####Install Node and npm 
 ```
@@ -17,7 +17,7 @@ sudo apt-get update
 sudo apt-get install nodejs
 sudo apt-get install npm
 ```
-*Note: This is installed from apt-get so it may not be the latest version alternative install with ppa (chris lea repo) to get a more uptodate version*
+*Note: Installed from apt-get so it may not be the latest version, alternative install with ppa (chris lea repo)*
 
 ####Create a symlink in your path to use the `node` comand
 ```
@@ -32,6 +32,7 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 sudo apt-get update
 sudo apt-get install mongodb-org
 ```
+*[source @ http://docs.mongodb.org/](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/)*
 
 ####Install Express
 ```
@@ -64,13 +65,13 @@ node app.js
 
 ##PM2 options
 
-####Install PM2 
+####Install pm2 
 ```
 sudo npm install -g pm2
 ```
 *Note: pm2 will allow you to keep your server running and create clusters*
 
-####Start PM2 
+####Start pm2 
 ```
 sudo pm2 start <server file> -i 4
 ```
@@ -83,7 +84,7 @@ sudo pm2 restart <server file>
 sudo pm2 delete <server file>
 ```
 
-####Different ways to launch a PM2 process 
+####Different ways to launch a pm2 process 
 ```
 pm2 start app.js -i max  # Will start maximum processes depending on available CPUs
 pm2 start app.js -i 3    # Will start 3 processes
