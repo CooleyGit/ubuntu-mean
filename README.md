@@ -67,7 +67,8 @@ node app.js
 
 ####Install pm2 
 ```
-sudo npm install -g pm2
+sudo npm install -g pm2  // not working on latest build
+sudo npm install pm2@latest -g --unsafe-perm
 ```
 *Note: pm2 will allow you to keep your server running and create clusters*
 
